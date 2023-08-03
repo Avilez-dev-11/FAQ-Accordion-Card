@@ -1,0 +1,30 @@
+:root{
+    --text-darkBlue: hsl(238, 29%, 16%);
+    --text-softRed: hsl(14, 88%, 65%);
+    --text-veryDarkGrayBlue: hsl(237, 12%, 33%);
+    --text-darkGrayBlue: hsl(240, 6%, 50%);
+    --gradient-softViolet: hsl(273, 75%, 66%);
+    --gradient-softBlue: hsl(240, 73%, 65%);
+    --divider-lightGrayBlue: hsl(240, 5%, 91%);
+}
+html {
+    box-sizing: border-box;
+    font-size:  100%;
+}
+
+*, 
+*::before, 
+*::after {
+    box-sizing: inherit;
+}
+
+body{
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-image: linear-gradient( 
+        var(--gradient-softViolet),
+        var(--gradient-softBlue)
+    );
+}
