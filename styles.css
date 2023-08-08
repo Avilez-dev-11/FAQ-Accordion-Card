@@ -21,10 +21,61 @@ html {
 body{
     min-height: 100vh;
     margin: 0;
-    padding: 0;
+    padding: 3rem;
     font-family: 'Kumbh Sans', sans-serif;
     background-image: linear-gradient( 
         var(--gradient-softViolet),
         var(--gradient-softBlue)
     );
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 2rem;
+    max-width: 56rem;
+}
+
+.card_image img{
+    width: 100%;
+    height: auto;
+    max-width: 25rem;
+}
+.card_text {
+    
+}
+.card_box {
+
+}
+
+@media (min-width: 56em){
+    .card {
+        display: flex;
+        position: relative;
+        margin: 6rem auto;
+        padding-right: 2rem;
+        background-image: url('images/bg-pattern-desktop.svg');
+        background-size: 45%;
+        background-repeat: no-repeat;
+        background-position: -13% center;
+    }
+    .card_image,
+    .card_text {
+        flex: 1;
+    }
+    .card_image {
+        display: flex;
+        overflow: hidden;
+        align-items: center;
+    }
+    .card_image img {
+        transform: translateX(-4rem);
+    }
+    .card_box {
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: 57%;
+        left: 0;
+        transform: translateX(-50%) translateY(-50%);
+    }
 }
